@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --primary-color: black;
+        } <!--Exemplo de Variável-->
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Computer Choice: <span id="comp-choice" style="color: red;"></span></h2>
+    <h2>Player Choice: <span id="player-choice" style="color:yellow;"></span></h2>
+    <h2>Result: <span id="game-result"></span></h2>
+    <div class="btns-div">
+        <input class="btn" id="rock-btn" type="button" value="Rock">
+        <input class="btn" id="paper-btn" type="button" value="Paper">
+        <input class="btn" id="scissors-btn" type="button" value="Scissors">
+    </div>
+</body>
+
+</html>
