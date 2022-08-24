@@ -1,4 +1,4 @@
-// Arrow Functions Are Anonymous Functions
+// Arrow Functions São Funções Anônimas
 
 function sum(a, b) {
     return a + b
