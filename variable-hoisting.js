@@ -1,6 +1,6 @@
 // Hoisting = Elevação ou Erguer
 
-// var x    <=
+// var x;   <= É como se a variável já fora criada, entretanto, indefinida, pois ainda não foi lhe dado valor.
 
 console.log(x) // Indefinida pois a variável ainda não foi criada
 
