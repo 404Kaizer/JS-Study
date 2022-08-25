@@ -14,7 +14,7 @@ CHOICES.forEach(CHOICES => CHOICES.addEventListener('click', (e) => {
     checkGameResult()
 }))
 
-function generateRandomNum() {
+generateRandomNum = () => {
     const RANDOM_NUM = Math.floor(Math.random() * CHOICES.length) + 1
 
     switch(RANDOM_NUM) {
@@ -34,7 +34,7 @@ function generateRandomNum() {
     COMPUTER_CHOICE.innerText = compChoiceValueStorage
 }
 
-function checkGameResult() {
+checkGameResult = () => {
 
     if(playerChoiceValueStorage === compChoiceValueStorage) {
         resultValueStorage = "Draw!!"
