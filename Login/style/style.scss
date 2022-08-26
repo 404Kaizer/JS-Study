@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins';
+}
+
+body {
+    height: 100%;
+    margin: auto;
+    background-color: black;
+
+    #flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+        #back-btn {
+            width: 40px;
+            margin-bottom: 10px;
+            font-size: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: auto;
+
+            #login-input, #newlogin-input {
+                margin-bottom: 10px;
+            }
+
+            #login-input, #password-input, #newlogin-input, #newpassword-input {
+                color: black;
+            }
+
+            #checkbox-div {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-top: 5px;
+                
+                #show-password {
+                    margin-left: 0;
+                }
+            }
+
+            .submit-btn {
+                color: black;
+                width: 100%;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+
+            #signup-link {
+                width: 100%;
+            }
+        }
+    }
+}

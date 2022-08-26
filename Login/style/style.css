@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins";
+}
+
+body {
+  height: 100%;
+  margin: auto;
+  background-color: black;
+}
+body #flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+body #flexbox #back-btn {
+  width: 40px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: black;
+}
+body #flexbox form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+}
+body #flexbox form #login-input, body #flexbox form #newlogin-input {
+  margin-bottom: 10px;
+}
+body #flexbox form #login-input, body #flexbox form #password-input, body #flexbox form #newlogin-input, body #flexbox form #newpassword-input {
+  color: black;
+}
+body #flexbox form #checkbox-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 5px;
+}
+body #flexbox form #checkbox-div #show-password {
+  margin-left: 0;
+}
+body #flexbox form .submit-btn {
+  color: black;
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+body #flexbox form #signup-link {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
