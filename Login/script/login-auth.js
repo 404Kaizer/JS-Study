@@ -3,10 +3,13 @@ let users = {
     password: ['1232', '5555', '2020', '5155', '1000']
 }
 
+// Object Deconstruct
+let { login, password } = users
+
 checkLogin = () => {
     let loginInput = document.getElementById('login-input').value
 
-    if(users.login.includes(loginInput) === false) {
+    if(login.includes(loginInput) === false) {
         alert('Please enter a valid login.')
         return
     }
@@ -17,7 +20,7 @@ checkLogin = () => {
 checkPassword = () => {
     let passwordInput = document.getElementById('password-input').value
 
-    if(users.password.includes(passwordInput) === false) {
+    if(password.includes(passwordInput) === false) {
         alert('Please enter a valid password.')
         return
     }

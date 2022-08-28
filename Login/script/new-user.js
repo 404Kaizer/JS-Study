@@ -7,17 +7,17 @@ newUser = () => {
         return
     }
 
-    if(users.login.includes(newLoginInput)) {
+    if(login.includes(newLoginInput)) {
         alert('Login already registered. Please choose another.')
         return
     }
 
-    if(users.password.includes(newPasswordInput)) {
+    if(password.includes(newPasswordInput)) {
         alert('Password already registered. Please choose another.')
         return
     }
 
-    users.login.push(newLoginInput)
-    users.password.push(newPasswordInput)
+    login.push(newLoginInput)
+    password.push(newPasswordInput)
     alert('Account created!!')
 }

@@ -6,7 +6,7 @@ console.log(1 == '1')
 // Resultado: False; O resultado será o resultado verdadeiro. Um inteiro é diferente  de uma string, retornando False.
 console.log(1 === '1')
 
-// O mesmo serve pro sinal de diferente...
+// O mesmo serve pro sinal de diferença...
 
 // Resultado: False.
 console.log(1 != '1')

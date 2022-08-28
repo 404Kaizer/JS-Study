@@ -1,4 +1,4 @@
-let Person = ({
+let Person = {
     checkName: (n) => {
         let name = n
         return console.log(`Name: ${name}`)
@@ -15,7 +15,7 @@ let Person = ({
         let country = c
         return console.log(`Country: ${country}`)
     }
-})
+}
 
 Person.checkName("Hugo")
 Person.checkAge(22)

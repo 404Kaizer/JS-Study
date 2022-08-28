@@ -1,4 +1,4 @@
-// Protótipos possibilitam criar novos métodos para arrays. Também permite criar novas propriedades para objetos.
+// Protótipos possibilitam criar novos métodos para arrays. Permitem também criar novas propriedades para objetos.
 // Entretanto não se é recomendado modificar protótipos de objetos que você não possa controlar, como datatypes.
 
 class citizen {
