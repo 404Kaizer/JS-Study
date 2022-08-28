@@ -10,7 +10,7 @@ checkLogin = () => {
     let loginInput = document.getElementById('login-input').value
 
     if(login.includes(loginInput) === false) {
-        alert('Please enter a valid login.')
+        alert('Please enter a valid login and password.')
         window.location.reload()
         return
     }
@@ -22,7 +22,7 @@ checkPassword = () => {
     let passwordInput = document.getElementById('password-input').value
 
     if(password.includes(passwordInput) === false) {
-        alert('Please enter a valid password.')
+        alert('Please enter a valid login and password.')
         window.location.reload()
         return
     }
