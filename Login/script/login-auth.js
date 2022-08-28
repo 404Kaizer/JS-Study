@@ -11,6 +11,7 @@ checkLogin = () => {
 
     if(login.includes(loginInput) === false) {
         alert('Please enter a valid login.')
+        window.location.reload()
         return
     }
     
@@ -22,6 +23,7 @@ checkPassword = () => {
 
     if(password.includes(passwordInput) === false) {
         alert('Please enter a valid password.')
+        window.location.reload()
         return
     }
 

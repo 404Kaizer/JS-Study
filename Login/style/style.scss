@@ -9,25 +9,31 @@ body {
     margin: auto;
     background-color: black;
 
-    #flexbox {
-        display: flex;
-        flex-direction: column;
+    .gridbox {
+        display: grid;
         justify-content: center;
         align-items: center;
-        height: 90vh;
+        height: 100vh;
 
         #back-btn {
-            width: 60px;
-            height: 30px;
+            width: 45px;
+            height: 25px;
+            padding: 0;
             margin-bottom: 10px;
             font-weight: bold;
             text-align: center;
             color: black;
+            cursor: pointer;
+        }
+
+        #back-btn:hover {
+            background-color: yellow;
         }
 
         form {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
             width: 500px;
             height: auto;
 
@@ -37,8 +43,8 @@ body {
 
             #login-input, #password-input, #newlogin-input, #newpassword-input {
                 color: black;
-                height: 30px;
-                border-radius: 4px;
+                height: 35px;
+                width: 200px;
                 padding: 5px;
             }
 
@@ -50,20 +56,37 @@ body {
                 
                 #show-password {
                     margin-left: 0;
+                    width: 12px;
+                    height: 12px;
+                    cursor: pointer;
+                }
+
+                .input-title {
+                    color: rgb(190, 190, 255);
+                    font-size: 12px;
+                }
+
+                .input-title:hover {
+                    text-decoration: underline;
                 }
             }
 
             .submit-btn {
                 color: black;
-                width: 100%;
-                height: 30px;
+                height: 25px;
+                width: 200px;
                 font-weight: bold;
                 margin-top: 5px;
                 cursor: pointer;
             }
 
+            .submit-btn:hover {
+                background-color: yellow;
+            }
+
             #signup-link {
-                width: 100%;
+                height: auto;
+                width: auto;
             }
         }
     }
