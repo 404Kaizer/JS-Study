@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="script/show-password.js" defer></script>
     <script src="script/login-auth.js" defer></script>
-    <script src="script/new-user.js" defer></script>
 </head>
 <body>
     <div class="gridbox">
-        <form action="#">
+        <form id="login-form" action="#" method="GET">
+            <div id="login-error-message"></div>
             <span class="input-title">Login:</span> <input type="text" name="login" id="login-input" placeholder="Enter your login..." required>
             <span class="input-title">Password:</span> <input type="password" name="password" id="password-input" placeholder="Enter your password..." required>
             <div id="checkbox-div">
                 <input type="checkbox" name="visibility" onclick="showPassword()" id="show-password"> <span class="input-title">Show Password</span>
             </div>
-            <input type="button" value="LOGIN" class="submit-btn" onclick="checkLogin()">
-            <a href="signup-index.html" id="signup-link"><input type="button" value="SIGNUP" class="submit-btn"></a>
+            <button type="submit" class="submit-btn">LOGIN</button>
+            <button type="button" class="submit-btn"><a href="signup-index.html" class="link">SIGNUP</a></button>
         </form>
     </div>
 </body>

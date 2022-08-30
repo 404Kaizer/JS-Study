@@ -12,11 +12,12 @@
 </head>
 <body>
     <div class="gridbox">
-        <form action="#">
-            <a href="login-index.html"><input type="button" id="back-btn" value="Back"></a>
+        <form id="newuser-form" action="login-index.html">
+            <div id="newuser-error-message"></div>
+            <button id="back-btn"><a class="link" href="login-index.html">BACK</a></button>
             <span class="input-title">New Login:</span> <input type="text" name="login" id="newlogin-input" placeholder="Enter your login..." required>
             <span class="input-title">New Password:</span> <input type="password" name="password" id="newpassword-input" placeholder="Enter your password..." required>
-            <input type="button" value="SIGNUP" class="submit-btn" onclick="newUser()">
+            <button type="submit" class="submit-btn">SIGNUP</button>
         </form>
     </div>
 </body>

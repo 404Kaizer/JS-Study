@@ -1,25 +1,26 @@
-newUser = () => {
-    let newLoginInput = document.getElementById('newlogin-input').value
-    let newPasswordInput = document.getElementById('newpassword-input').value
+const newLoginInput = document.querySelector('#newlogin-input')
+const newPasswordInput = document.querySelector('#newpassword-input')
+const newErrorMessage = document.querySelector('#newuser-error-message')
+const newForm = document.querySelector('#newuser-form')
 
-    if((newLoginInput === '') || (newPasswordInput === '')) {
-        alert('Blank login or password. Fill all the fields to procced.')
-        return
+newForm.addEventListener('submit', (e) => {
+    let messages = []
+
+    if(login.includes(newLoginInput.value)) {
+        newErrorMessage.style.color = 'red'
+        messages.push('Login already exists. Try another.')
     }
 
-    if(login.includes(newLoginInput)) {
-        alert('Login already registered. Please choose another.')
-        window.location.reload()
-        return
+    if(newPasswordInput.value.length < 8) {
+        newErrorMessage.style.color = 'red'
+        messages.push('Password length must be of 8 or more characters.')
     }
 
-    // Somente para fins de teste, já que não faz sentido verificar se uma senha já existe no contexto de criação de usuário...
-    if(password.includes(newPasswordInput)) {
-        alert('Password already registered. Please choose another.')
-        return
+    if(messages.length > 0) {
+        e.preventDefault()
+        newErrorMessage.innerText = messages.join(' ')
     }
 
     login.push(newLoginInput)
     password.push(newPasswordInput)
-    alert('Account created!!')
-}
+})

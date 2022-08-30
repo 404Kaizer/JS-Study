@@ -7,7 +7,7 @@
 body {
   height: 100%;
   margin: auto;
-  background-color: black;
+  background-color: rgb(31, 31, 31);
 }
 body .gridbox {
   display: grid;
@@ -22,8 +22,11 @@ body .gridbox #back-btn {
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
-  color: black;
   cursor: pointer;
+}
+body .gridbox #back-btn .link {
+  color: black;
+  text-decoration: none;
 }
 body .gridbox #back-btn:hover {
   background-color: yellow;
@@ -34,6 +37,13 @@ body .gridbox form {
   justify-content: center;
   width: 500px;
   height: auto;
+}
+body .gridbox form #login-error-message, body .gridbox form #newuser-error-message {
+  width: 200px;
+  font-size: 12px;
+  word-wrap: break-word;
+  text-align: center;
+  margin-bottom: 10px;
 }
 body .gridbox form #login-input, body .gridbox form #newlogin-input {
   margin-bottom: 10px;
@@ -70,6 +80,10 @@ body .gridbox form .submit-btn {
   font-weight: bold;
   margin-top: 5px;
   cursor: pointer;
+}
+body .gridbox form .submit-btn .link {
+  color: black;
+  text-decoration: none;
 }
 body .gridbox form .submit-btn:hover {
   background-color: yellow;

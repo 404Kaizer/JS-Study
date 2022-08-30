@@ -6,26 +6,24 @@ let users = {
 // Object Deconstruct
 let { login, password } = users
 
-checkLogin = () => {
-    let loginInput = document.getElementById('login-input').value
+const loginInput = document.querySelector('#login-input')
+const passwordInput = document.querySelector('#password-input')
+const loginForm = document.querySelector('#login-form')
+const loginErrorMessage = document.querySelector('#login-error-message')
 
-    if(login.includes(loginInput) === false) {
-        alert('Please enter a valid login and password.')
-        window.location.reload()
-        return
-    }
+loginForm.addEventListener('submit', (e) => {
+    let messages = []
     
-    checkPassword()
-}
-
-checkPassword = () => {
-    let passwordInput = document.getElementById('password-input').value
-
-    if(password.includes(passwordInput) === false) {
-        alert('Please enter a valid login and password.')
-        window.location.reload()
-        return
+    if((login.includes(loginInput.value) === false) || (password.includes(passwordInput.value) === false)) {
+        loginErrorMessage.style.color = 'red'
+        messages.push('Invalid login or password.')
+    } else {
+        loginErrorMessage.style.color = 'green'
+        loginErrorMessage.innerText = 'Successfully logged in!!'
     }
 
-    alert('Login succedded!!')
-}
+    if(messages.length > 0) {
+        e.preventDefault()
+        loginErrorMessage.innerText = messages.join(' ')
+    }
+})

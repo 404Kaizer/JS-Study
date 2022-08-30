@@ -1,9 +1,6 @@
 // Callbacks podem ser tanto síncronos quanto assíncronos.
 // Callbacks garantem que uma função seja executada logo após uma tarefa ser concluída.
 
-alert('Clique no botão para executar a função de callback!')
-
-
 // Callback a partir de um botão.
 document.querySelector('#callback-btn').addEventListener('click', () => {
     setTimeout(callbackBtn = () => {
