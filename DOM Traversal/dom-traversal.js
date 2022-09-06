@@ -1,5 +1,5 @@
 const domById = document.getElementById('grandparent-id')
-const domByClass = document.getElementsByClassName('grandparent-class')
+const domByClass = document.getElementsByClassName('grandparent-class') // Seleciona todos os elementos que possuirem a classe determinado.
 
 
 const domByQuerySelector = document.querySelector('.grandparent-class') // Seleciona apenas o primeiro elemento que possui o seletor determinado.
