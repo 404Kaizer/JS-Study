@@ -14,7 +14,7 @@ CHOICES.forEach(CHOICES => CHOICES.addEventListener('click', (e) => {
     checkGameResult()
 }))
 
-generateRandomNum = () => {
+let generateRandomNum = () => {
     const RANDOM_NUM = Math.floor(Math.random() * CHOICES.length) + 1
 
     switch(RANDOM_NUM) {
@@ -34,32 +34,38 @@ generateRandomNum = () => {
     COMPUTER_CHOICE.innerText = compChoiceValueStorage
 }
 
-checkGameResult = () => {
+let checkGameResult = () => {
 
     if(playerChoiceValueStorage === compChoiceValueStorage) {
         resultValueStorage = "Draw!!"
         GAME_RESULT.style.color = "yellow"
     }
+    
     if(playerChoiceValueStorage === "Rock" && compChoiceValueStorage === "Paper") { 
         resultValueStorage = "You Lost!!"
         GAME_RESULT.style.color = "red"
     }
+
     if(playerChoiceValueStorage === "Rock" && compChoiceValueStorage === "Scissors") {
         resultValueStorage = "You Win!!"
         GAME_RESULT.style.color = "green"
     }
+
     if(playerChoiceValueStorage === "Paper" && compChoiceValueStorage === "Rock") {
         resultValueStorage = "You Win!!"
         GAME_RESULT.style.color = "green"
     }
+
     if(playerChoiceValueStorage === "Paper" && compChoiceValueStorage === "Scissors") { 
         resultValueStorage = "You Lost!!"
         GAME_RESULT.style.color = "red"
     }
+
     if(playerChoiceValueStorage === "Scissors" && compChoiceValueStorage === "Rock") {
         resultValueStorage = "You Lost!!"
         GAME_RESULT.style.color = "red"
     }
+
     if(playerChoiceValueStorage === "Scissors" && compChoiceValueStorage === "Paper") {
          resultValueStorage = "You Win!!"
          GAME_RESULT.style.color = "green"
