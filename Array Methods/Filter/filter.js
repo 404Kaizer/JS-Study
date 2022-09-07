@@ -9,7 +9,7 @@ const students = [
     { name: 'Jace', avg: 5 },
 ]
 
-const avgFilter = students.filter((grades) => {
+const avgFilter = students.filter(grades => {
     let filteredAvg = grades.avg
     let filteredNames = grades.name
     if(filteredAvg < 6) {
