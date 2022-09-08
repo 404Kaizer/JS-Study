@@ -1,4 +1,4 @@
-// O método Filter cria uma nova array com todos os elementos de uma outra array específica que passem no teste.
+// O método Filter cria uma nova array com todos os elementos de uma outra array específica que passem no teste
 
 const students = [
     { name: 'John', avg: 5 },
