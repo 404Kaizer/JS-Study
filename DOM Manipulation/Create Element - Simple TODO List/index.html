@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+    <script src="script.js" defer></script>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 20px;
+        }
+
+        ul {
+            margin: 10px;
+            padding: 10px;
+            list-style-type: circle;
+        }
+
+        input, button {
+            height: 30px;
+        }
+
+        .input-container {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="list"></ul>
+        <div class="input-container">
+            <input type="text" name="text-input" class="user-input" placeholder="Write here...">
+            <button class="add-btn">Click to Insert</button>
+        </div>
+    </div>
+</body>
+</html>

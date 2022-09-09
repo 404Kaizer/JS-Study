@@ -12,9 +12,9 @@ addBtn.addEventListener('click', () => {
 let createListElement = () => {
     let newListChild = document.createElement('li')
     newListChild.textContent = `-${counter}° Content`
-    addListElement(newListChild)
+    addListElementAfter(newListChild)
 }
 
-let addListElement = (newListChild) => {
+let addListElementAfter = (newListChild) => {
     list.insertBefore(newListChild, list.firstChild.nextSibling)
 }
