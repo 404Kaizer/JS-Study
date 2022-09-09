@@ -19,7 +19,7 @@ const getUserInput = () => {
 
 const createNewElement = (userInputValue) => {
     let newElement = document.createElement('li')
-    newElement.textContent = `${userInputValue}`
+    newElement.textContent = userInputValue
     insertElementBefore(newElement)
 }
 
